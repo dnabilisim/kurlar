@@ -100,4 +100,4 @@ Katkıda bulunmak isterseniz, lütfen bir pull request gönderin veya bir issue 
 
 ## Lisans
 
-Bu proje [Apache 2.0 Lisansı](LICENSE) ile lisanslanmıştır.
+Bu proje [MIT](LICENSE) ile lisanslanmıştır.
