@@ -156,7 +156,7 @@ jobs:
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
       
       - name: Build 🔨
-        run: yarn run build
+        run: yarn && yarn run build
 
       - name: Publish ✨
         run: yarn publish
@@ -191,7 +191,7 @@ jobs:
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Build 🔨
-        run: yarn run build
+        run: yarn && yarn run build
 
       - name: Publish ✨
         run: yarn publish --access public --no-git-tag-version
