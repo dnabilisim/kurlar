@@ -1,5 +1,5 @@
 {
-	"name": "@mustafagenc/kurlar",
+	"name": "kurlar",
 	"version": "1.0.0",
 	"description": "Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından yayınlanan döviz kurlarını kolayca çekmenizi sağlayan kütüphane.",
 	"main": "./dist/index.js",
@@ -18,10 +18,7 @@
 		"format:check": "biome format --check",
 		"format:fix": "biome format --fix"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mustafagenc/kurlar.git"
-	},
+	"repository": "github:mustafagenc/kurlar",
 	"keywords": ["tcmb", "kurlar", "döviz"],
 	"author": {
 		"name": "Mustafa Genç",

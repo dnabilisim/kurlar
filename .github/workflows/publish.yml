@@ -144,6 +144,15 @@ jobs:
           echo Version: $VERSION
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
+      - name: package.json info
+        id: info
+        uses: jaywcjlove/github-action-package@main
+        with:
+          data: |
+            {
+              "name": "@mustafagenc/kurlar"
+            }
+
       - uses: actions/setup-node@v4
         with:
           always-auth: true
