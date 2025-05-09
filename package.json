@@ -1,5 +1,5 @@
 {
-	"name": "kurlar",
+	"name": "@mustafagenc/kurlar",
 	"version": "1.0.0",
 	"description": "Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından yayınlanan döviz kurlarını kolayca çekmenizi sağlayan kütüphane.",
 	"main": "./dist/index.js",

@@ -18,7 +18,7 @@ Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından yayınlanan döviz kurlar
 Projeyi kullanmaya başlamak için aşağıdaki adımları izleyin:
 
 ```bash
-yarn add kurlar
+yarn add @mustafagenc/kurlar
 ```
 
 ## Kullanım
