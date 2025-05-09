@@ -97,7 +97,7 @@ jobs:
           path: dist.zip
 
   release:
-    name: 🚀 Create Release 
+    name: 🚀 Publish Release 
     needs: build
     runs-on: ubuntu-latest
     steps:
