@@ -154,7 +154,12 @@ jobs:
                 echo "Updating package.json version to ${VERSION}"
                 yarn version --new-version "${VERSION}" --no-git-tag-version
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
-      - run: yarn publish
+      
+      - name: Build 🔨
+        run: yarn run build
+
+      - name: Publish ✨
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -184,6 +189,11 @@ jobs:
                 echo "Updating package.json version to ${VERSION}"
                 yarn version --new-version "${VERSION}" --no-git-tag-version
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - run: yarn publish --access public --no-git-tag-version
+
+      - name: Build 🔨
+        run: yarn run build
+
+      - name: Publish ✨
+        run: yarn publish --access public --no-git-tag-version
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
